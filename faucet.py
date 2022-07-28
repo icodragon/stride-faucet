@@ -7,7 +7,6 @@ from mospy.clients import HTTPClient
 from dotenv import load_dotenv
 
 load_dotenv()
-client = HTTPClient(api=os.getenv('API_NODE'))
 
 
 class Faucet:
@@ -39,7 +38,7 @@ class Faucet:
                 amount=os.getenv('AMOUNT'),
                 denom=os.getenv('DENOM')
             )
-        hash, code, log = client.broadcast_transaction(transaction=tx)
+        hash, code, log = self._client.broadcast_transaction(transaction=tx)
         return f"{hash} {code} {log}"
 
 
