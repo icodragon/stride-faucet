@@ -1,4 +1,3 @@
-mospy~=0.0.1
 python-dotenv~=0.20.0
 cosmospy_protobuf~=0.0.1
 
