@@ -1,0 +1,6 @@
+mospy~=0.0.1
+python-dotenv~=0.20.0
+cosmospy_protobuf~=0.0.1
+
+#cosmos signing library
+git+https://github.com/ctrl-Felix/mospy.git
